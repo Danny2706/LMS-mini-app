@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { LearningHabitsQuiz } from "@/components/learning-habit/learning-habits-quiz";
-import { CompletionScreen } from "@/components/complation/completion-screen";
+import { LearningHabitsQuiz } from "@/components/learning-habit/learning-habits-quiz"
+import { CompletionScreen } from "@/components/completion/completion-screen";
 import { NavigationHeader } from "@/components/ui/navigation-header";
-import { learningHabitsQuestions } from "@/data/learning-habit-data";
+import { learningHabitsQuestions } from "@/data/learning-habit-data"
 
 export function LearningHabitsFlow({ onComplete, onBack }) {
   const [currentStep, setCurrentStep] = useState("quiz");
@@ -32,7 +32,7 @@ export function LearningHabitsFlow({ onComplete, onBack }) {
   if (currentStep === "quiz") {
     return (
       <div>
-        <NavigationHeader title="Learning Style Quiz" onBack={onBack} />
+        <NavigationHeader title="Learning Style Discovery" onBack={onBack} />
         <LearningHabitsQuiz
           question={learningHabitsQuestions[currentQuestionIndex]}
           onAnswerSelect={handleAnswerSelect}
@@ -49,7 +49,7 @@ export function LearningHabitsFlow({ onComplete, onBack }) {
 
   return (
     <div>
-      <NavigationHeader title="Quiz Complete" onBack={onBack} />
+      <NavigationHeader title="Learning Style Discovered!" onBack={onBack} />
       <CompletionScreen
         score={Object.keys(answers).length}
         totalQuestions={learningHabitsQuestions.length}
