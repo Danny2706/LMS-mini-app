@@ -6,7 +6,7 @@ import { LearningHabitsFlow } from "@/components/flows/learning-habits-flow"
 import CoursesPage from "@/components/courses/courses-page"
 
 export default function HomePage() {
-  const [currentView, setCurrentView] = useState("courses")
+  const [currentView, setCurrentView] = useState("welcome")
 
   const handleComplete = (nextView) => {
     setCurrentView(nextView || "welcome")
