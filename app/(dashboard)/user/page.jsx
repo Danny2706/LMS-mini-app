@@ -197,9 +197,7 @@ export default function UserHome() {
       <div className="bg-gradient-to-r from-[#006838] to-[#8dc63f] rounded-lg p-6 text-white my-4">
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="mb-2 text-2xl font-bold">
-              Welcome back, {user?.name}!
-            </h1>
+            <h1 className="mb-2 text-2xl font-bold">Welcome, {user?.name}!</h1>
             <p className="text-[#e8f5e9]">
               Continue your learning journey. You're doing great!
             </p>

@@ -98,7 +98,6 @@ export default function SignupForm() {
       confirmPassword: true,
       gender: true,
       role: true,
-     
     });
 
     const { isValid } = passwordStatus;
@@ -118,16 +117,9 @@ export default function SignupForm() {
         },
         { withCredentials: true }
       );
-      const { user } = res.data;
-      dispatch(setUser(user));
 
-      if (user.role === "ADMIN") {
-        router.push("/admin");
-      } else if (user.role === "TRAINER") {
-        router.push("/trainer");
-      } else {
-        router.push("/user");
-      }
+      router.push("/login");
+
       customToast.success("User registered successfully!");
     } catch (err) {
       console.log(err.response?.data);
