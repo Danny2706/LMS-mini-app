@@ -29,14 +29,18 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import TopHeader from "@/components/userUi/TopHeader";
+import { useSelector } from "react-redux";
 
 export default function TrainerDashboard() {
+  const { user, isAuthenticated } = useSelector((store) => store.auth);
   return (
     <div className="container mx-auto px-4 pb-8 mt-6">
       <div className="bg-gradient-to-r from-[#006838] to-[#8dc63f] rounded-lg p-6 text-white my-4">
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="text-2xl font-bold mb-2">Welcome back, Alex!</h1>
+            <h1 className="text-2xl font-bold mb-2">
+              Welcome Trainer, {user?.name}!
+            </h1>
             <p className="text-blue-100">
               Continue your learning journey. You're doing great!
             </p>

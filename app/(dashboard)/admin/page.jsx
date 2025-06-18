@@ -75,7 +75,7 @@ const AdminDashboard = () => {
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-2xl font-bold mb-2">
-              Welcome back, Admin {user?.name}!
+              Welcome, Admin {user?.name}!
             </h1>
             <p className="text-[#e8f5e9]">
               Manage your learning platform efficiently. Here's your dashboard
@@ -116,9 +116,9 @@ const AdminDashboard = () => {
               Number={stats?.users?.adminCount}
               iconColor="text-[#006838] dark:text-[#8dc63f]"
             />
-            <UserCard 
-              type="Admin" 
-              date="2025" 
+            <UserCard
+              type="Admin"
+              date="2025"
               Number={stats?.courseCount}
               iconColor="text-[#006838] dark:text-[#8dc63f]"
             />
@@ -138,7 +138,7 @@ const AdminDashboard = () => {
                     { name: "Male", value: stats?.gender?.maleCount || 60 },
                     { name: "Female", value: stats?.gender?.femaleCount || 40 },
                   ]}
-                  colors={['#006838', '#8dc63f']}
+                  colors={["#006838", "#8dc63f"]}
                 />
               </CardContent>
             </Card>
@@ -151,9 +151,9 @@ const AdminDashboard = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent className="h-[300px]">
-                <PieChart 
-                  data={completionData} 
-                  colors={['#006838', '#8dc63f', '#e8f5e9']}
+                <PieChart
+                  data={completionData}
+                  colors={["#006838", "#8dc63f", "#e8f5e9"]}
                 />
               </CardContent>
             </Card>
@@ -166,9 +166,9 @@ const AdminDashboard = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent className="h-[300px]">
-                <BarChart 
-                  data={enrollmentData} 
-                  colors={['#006838', '#8dc63f']}
+                <BarChart
+                  data={enrollmentData}
+                  colors={["#006838", "#8dc63f"]}
                 />
               </CardContent>
             </Card>
@@ -181,9 +181,9 @@ const AdminDashboard = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent className="h-[300px]">
-                <LineChart 
-                  data={performanceData} 
-                  colors={['#006838', '#8dc63f']}
+                <LineChart
+                  data={performanceData}
+                  colors={["#006838", "#8dc63f"]}
                 />
               </CardContent>
             </Card>
@@ -199,10 +199,18 @@ const AdminDashboard = () => {
               <Table>
                 <TableHeader className="bg-[#e8f5e9] dark:bg-[#006838]/20">
                   <TableRow>
-                    <TableHead className="text-[#006838] dark:text-[#8dc63f]">Rank</TableHead>
-                    <TableHead className="text-[#006838] dark:text-[#8dc63f]">Name</TableHead>
-                    <TableHead className="text-[#006838] dark:text-[#8dc63f]">Course</TableHead>
-                    <TableHead className="text-right text-[#006838] dark:text-[#8dc63f]">Score</TableHead>
+                    <TableHead className="text-[#006838] dark:text-[#8dc63f]">
+                      Rank
+                    </TableHead>
+                    <TableHead className="text-[#006838] dark:text-[#8dc63f]">
+                      Name
+                    </TableHead>
+                    <TableHead className="text-[#006838] dark:text-[#8dc63f]">
+                      Course
+                    </TableHead>
+                    <TableHead className="text-right text-[#006838] dark:text-[#8dc63f]">
+                      Score
+                    </TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
@@ -236,9 +244,12 @@ const AdminDashboard = () => {
                       rank: 4,
                     },
                   ].map((performer) => (
-                    <TableRow key={performer.id} className="border-[#e0e0e0] dark:border-[#333]">
+                    <TableRow
+                      key={performer.id}
+                      className="border-[#e0e0e0] dark:border-[#333]"
+                    >
                       <TableCell>
-                        <Badge 
+                        <Badge
                           className={
                             performer.rank === 1
                               ? "bg-gradient-to-r from-[#006838] to-[#8dc63f] text-white"
@@ -248,7 +259,9 @@ const AdminDashboard = () => {
                           #{performer.rank}
                         </Badge>
                       </TableCell>
-                      <TableCell className="font-medium">{performer.name}</TableCell>
+                      <TableCell className="font-medium">
+                        {performer.name}
+                      </TableCell>
                       <TableCell>{performer.course}</TableCell>
                       <TableCell className="text-right">
                         <span className="font-bold text-[#006838] dark:text-[#8dc63f]">
