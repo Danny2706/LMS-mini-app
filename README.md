@@ -1,36 +1,200 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎓 GreenPill LMS
 
-## Getting Started
+A modern Learning Management System (LMS) designed to provide an engaging and efficient online learning experience for students, instructors, and administrators.
 
-First, run the development server:
+---
+
+## 📖 Description
+
+GreenPill LMS is a full-stack web application that simplifies online education by providing course management, student enrollment, quizzes, progress tracking, and an intuitive dashboard. The project demonstrates modern software engineering principles, responsive UI design, secure authentication, REST API integration, and scalable application architecture.
+
+This project was developed to strengthen my experience in building real-world educational platforms using modern web technologies.
+
+---
+
+# ✨ Features
+
+## 👨‍🎓 Student Features
+
+* User Registration & Login
+* Course Enrollment
+* Browse Available Courses
+* Lesson Progress Tracking
+* Quiz Participation
+* Responsive Dashboard
+* Profile Management
+
+## 👨‍🏫 Instructor Features
+
+* Course Creation
+* Lesson Management
+* Upload Learning Materials
+* Student Monitoring
+* Quiz Management
+
+## 🛠️ Admin Features
+
+* User Management
+* Course Management
+* Dashboard Analytics
+* Platform Administration
+
+---
+
+# 🚀 Tech Stack
+
+## Frontend
+
+* React
+* JavaScript / TypeScript
+* Tailwind CSS
+* React Router
+* Axios
+
+## Backend
+
+* Node.js
+* Express.js
+
+## Database
+
+* PostgreSQL
+* Prisma ORM
+
+## Authentication
+
+* JWT Authentication
+* Protected Routes
+
+## Deployment
+
+* Vercel
+* Render
+
+---
+
+# 📸 Screenshots
+
+## Home Page
+
+<img width="1900" height="901" alt="ቅጽበታዊ ገጽ ዕይታ 2026-06-22 160814" src="https://github.com/user-attachments/assets/69f80b1e-eef0-49e5-9aaa-112769bc2cc9" />
+
+
+# 🌐 Live Demo
+
+**Application**
+
+https://lms-mini-app-ir5c-git-main-daniel-kumilachews-projects.vercel.app/
+
+
+# ⚙️ Installation
+
+## Clone Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/greenpill-lms.git
+
+cd greenpill-lms
+```
+
+## Install Dependencies
+
+```bash
+npm install
+```
+
+## Configure Environment Variables
+
+Create a `.env` file.
+
+Example:
+
+```env
+DATABASE_URL=your_database_url
+
+JWT_SECRET=your_secret_key
+
+PORT=5000
+```
+
+## Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+# 📂 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```text
+greenpill-lms/
 
-## Learn More
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── layouts/
+│   ├── hooks/
+│   ├── services/
+│   ├── utils/
+│   └── assets/
+│
+├── public/
+│
+├── prisma/
+│
+├── package.json
+│
+└── README.md
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# 🎯 Learning Outcomes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project helped me gain practical experience with:
 
-## Deploy on Vercel
+* Full Stack Development
+* React Component Architecture
+* REST API Integration
+* Authentication & Authorization
+* PostgreSQL Database Design
+* Prisma ORM
+* Responsive UI Design
+* State Management
+* Modern Deployment Workflows
+* Software Project Organization
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# 🔮 Future Improvements
+
+* Video Streaming Support
+* Assignment Submission
+* Certificate Generation
+* Discussion Forums
+* Live Classes
+* AI Learning Assistant
+* Course Recommendations
+* Email Notifications
+* Mobile Application
+* Multi-language Support
+
+---
+
+# 👨‍💻 Author
+
+**Daniel Kumilachew**
+
+Software Engineering Graduate
+
+* 🌐 Portfolio: *Add your portfolio URL*
+* 🐙 GitHub: https://github.com/Danny2706
+* 💼 LinkedIn: *Add your LinkedIn URL*
+* 📧 Email: *Add your professional email*
+
+---
+
+## ⭐ Support
+
+If you found this project interesting, consider giving it a ⭐ on GitHub. Feedback and suggestions are always welcome!
