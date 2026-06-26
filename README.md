@@ -92,7 +92,7 @@ https://lms-mini-app-ir5c-git-main-daniel-kumilachews-projects.vercel.app/
 ## Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/greenpill-lms.git
+git clone https://github.com/Danny2706/LMS_mini_app.git
 
 cd greenpill-lms
 ```
