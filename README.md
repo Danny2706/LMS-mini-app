@@ -188,12 +188,8 @@ This project helped me gain practical experience with:
 
 Software Engineering Graduate
 
-* 🌐 Portfolio: *Add your portfolio URL*
+* 🌐 Portfolio: https://my-portfolio1-psd2.onrender.com/
 * 🐙 GitHub: https://github.com/Danny2706
-* 💼 LinkedIn: *Add your LinkedIn URL*
-* 📧 Email: *Add your professional email*
-
----
 
 ## ⭐ Support
 
